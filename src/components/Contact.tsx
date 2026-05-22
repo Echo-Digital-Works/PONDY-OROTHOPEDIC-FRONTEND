@@ -38,11 +38,11 @@ const Contact = () => {
   return (
     <section id="contact" className="py-24 relative bg-navy-950 overflow-hidden">
       {/* Large faint logo background */}
-      <div className="absolute right-[-10%] bottom-[-20%] opacity-[0.03] pointer-events-none">
+      <div className="absolute right-[-10%] bottom-[-20%] opacity-[0.03] pointer-events-none hidden md:block">
         <Bone className="w-[800px] h-[800px]" />
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           
           {/* Contact Details */}

@@ -80,7 +80,7 @@ const specialities: Speciality[] = [
 
 const SpecialityCardUI = ({ spec }: { spec: Speciality }) => (
   <>
-    <div className="absolute -right-10 -top-10 w-32 h-32 bg-gold-500/5 rounded-full blur-2xl group-hover:bg-gold-500/10 transition-colors duration-500"></div>
+    <div className="absolute -right-6 -top-6 w-32 h-32 bg-gold-500/5 rounded-full blur-2xl group-hover:bg-gold-500/10 transition-colors duration-500"></div>
     <div className="w-12 h-12 border border-gold-500/40 rounded-full flex items-center justify-center text-gold-400 mb-4 group-hover:scale-110 transition-transform duration-500">
       {React.cloneElement(spec.icon, { className: 'w-5 h-5 stroke-[1.5]' } as React.SVGProps<SVGSVGElement>)}
     </div>
@@ -182,7 +182,7 @@ const Specialities = () => {
 
   return (
     <section id="specialities" className="py-24 relative bg-navy-950 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         <motion.div
           initial="hidden"
@@ -238,7 +238,7 @@ const Specialities = () => {
                   <ChevronLeft className="w-6 h-6" />
                 </button>
 
-                <div className="w-full max-w-[280px] sm:max-w-sm relative flex justify-center items-center h-[250px] overflow-visible">
+                <div className="w-full max-w-[280px] sm:max-w-sm relative flex justify-center items-center h-[250px] overflow-hidden">
                   <AnimatePresence initial={false} custom={direction} mode="wait" onExitComplete={() => setIsAnimating(false)}>
                     <motion.div
                       key={currentIndex}
