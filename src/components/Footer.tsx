@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-navy-950 pt-20 pb-6 relative border-t border-white/5">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Main Content Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 relative">
@@ -109,7 +109,7 @@ const Footer = () => {
           
           {/* Empty div to keep the social icons perfectly centered in the grid */}
           {/* Developed By */}
-<div className="hidden md:flex items-center">
+<div className="flex items-center justify-center md:justify-start">
   <p className="text-slate-500 text-xs font-light">
     Developed by{" : "}
     <span className="text-gold-500 font-medium">
