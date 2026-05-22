@@ -314,7 +314,7 @@ const Treatments = () => {
     <section id="treatments" className="py-24 relative bg-navy-900 border-y border-white/5">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMSIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjA1KSIvPjwvc3ZnPg==')] opacity-50"></div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-8">
           
           {/* Conditions */}
@@ -386,7 +386,7 @@ const Treatments = () => {
               </button>
 
               {/* Slider Container */}
-              <div className="w-full max-w-[280px] relative flex justify-center items-center h-[120px] overflow-visible">
+              <div className="w-full max-w-[280px] relative flex justify-center items-center h-[120px] overflow-hidden">
                 <AnimatePresence initial={false} custom={direction} onExitComplete={() => setIsAnimating(false)}>
                   <motion.div
                     key={activeTreatmentIndex}

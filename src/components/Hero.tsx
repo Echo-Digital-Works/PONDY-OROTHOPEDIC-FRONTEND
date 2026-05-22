@@ -17,16 +17,16 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-navy-900">
+    <section id="home" className="relative min-h-screen flex items-center py-20 overflow-hidden bg-navy-900">
       <div className="absolute inset-0 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat opacity-40 mix-blend-screen"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-navy-950/80 via-transparent to-navy-950"></div>
       <div className="absolute inset-0 bg-grid-pattern"></div>
       
       {/* Floating particles/shapes */}
-      <div className="absolute top-1/4 left-10 w-64 h-64 bg-gold-600/10 rounded-full blur-[100px]"></div>
-      <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px]"></div>
+      <div className="absolute top-1/4 left-10 w-40 md:w-64 h-40 md:h-64 bg-gold-600/10 rounded-full blur-[100px]"></div>
+      <div className="absolute bottom-1/4 right-10 w-56 md:w-96 h-56 md:h-96 bg-blue-600/10 rounded-full blur-[120px]"></div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10 w-full grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full grid lg:grid-cols-2 gap-12 items-center">
         <motion.div 
           initial="hidden"
           animate="visible"
@@ -38,7 +38,7 @@ const Hero = () => {
             <span className="text-xs uppercase tracking-widest text-gold-400 font-montserrat">Premium Medical Excellence</span>
           </motion.div>
           
-          <motion.h1 variants={itemFadeIn} className="text-5xl lg:text-7xl leading-tight font-playfair font-medium">
+          <motion.h1 variants={itemFadeIn} className="text-3xl sm:text-5xl lg:text-7xl leading-tight font-playfair font-medium">
             Restoring <span className="text-gradient font-style-italic font-light">Mobility</span>,<br /> 
             Relieving <span className="text-gradient font-style-italic font-light">Pain</span>
           </motion.h1>

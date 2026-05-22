@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       <nav className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-navy-950/90 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.5)] border-b border-gold-500/10 py-3' : 'bg-transparent py-6'}`}>
-        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center p-[2px]">
               <div className="w-full h-full bg-navy-950 rounded-full flex items-center justify-center">
