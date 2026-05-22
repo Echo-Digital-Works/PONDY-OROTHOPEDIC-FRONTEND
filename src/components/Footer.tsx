@@ -109,7 +109,7 @@ const Footer = () => {
           
           {/* Empty div to keep the social icons perfectly centered in the grid */}
           {/* Developed By */}
-<div className="hidden md:flex items-center">
+<div className="flex items-center justify-center md:justify-start">
   <p className="text-slate-500 text-xs font-light">
     Developed by{" : "}
     <span className="text-gold-500 font-medium">
