@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Bone, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,16 +17,8 @@ const Navbar = () => {
     <>
       <nav className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-navy-950/90 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.5)] border-b border-gold-500/10 py-3' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center p-[2px]">
-              <div className="w-full h-full bg-navy-950 rounded-full flex items-center justify-center">
-                <Bone className="text-gold-400 w-5 h-5" />
-              </div>
-            </div>
-            <div>
-              <h1 className="heading-cinzel text-xl md:text-2xl font-bold tracking-wider text-white">DR. MAJO'S</h1>
-              <p className="text-[10px] md:text-xs tracking-[0.2em] text-gold-500 uppercase font-montserrat">Ortho & Pain Clinic</p>
-            </div>
+          <div className="flex items-center">
+            <img src="/logo.png" alt="Dr. Majo's Ortho & Pain Clinic Logo" className="h-8 md:h-10 w-auto" />
           </div>
           
           <div className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
