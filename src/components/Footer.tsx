@@ -8,13 +8,13 @@ const Footer = () => {
   return (
     <footer className="bg-navy-950 pt-20 pb-6 relative border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        
+
         {/* Main Content Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 relative">
-          
+
           {/* Column 1: Logo & Contact */}
           <div className="flex flex-col gap-6">
-            
+
 
             <div>
               <h3 className="text-gold-500 font-montserrat mb-3">About Us</h3>
@@ -28,11 +28,11 @@ const Footer = () => {
               <div className="flex flex-col gap-2">
                 <a href="tel:+919999999999" className="flex items-center gap-3 text-slate-300 text-sm font-light hover:text-gold-400 transition-colors">
                   <Phone className="w-4 h-4 text-gold-500" />
-                  +91 9999 999 999
+                  +91 97109 98466
                 </a>
                 <a href="mailto:youremailid.com" className="flex items-center gap-3 text-slate-300 text-sm font-light hover:text-gold-400 transition-colors">
                   <Mail className="w-4 h-4 text-gold-500" />
-                  youremailid.com
+                  vishaldhana07@gmail.com
                 </a>
               </div>
             </div>
@@ -74,25 +74,25 @@ const Footer = () => {
           {/* Column 4: Subscribe */}
           <div>
             <h3 className="text-white font-montserrat mb-6">Subscribe More Info</h3>
-            
+
             <div className="relative mb-4">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <Mail className="h-4 w-4 text-navy-900" />
               </div>
-              <input 
-                type="email" 
-                placeholder="Enter your Email" 
+              <input
+                type="email"
+                placeholder="Enter your Email"
                 className="w-full bg-white text-navy-950 py-2.5 pl-10 pr-4 rounded-sm text-sm font-medium focus:outline-none focus:ring-2 focus:ring-gold-500"
               />
             </div>
-            
+
             <button className="bg-gold-500 hover:bg-gold-400 transition-colors text-white py-2 px-6 rounded-sm text-sm font-semibold">
               Subscribe
             </button>
           </div>
 
           {/* Back to Top Button */}
-          <button 
+          <button
             onClick={scrollToTop}
             className="absolute -bottom-8 right-0 bg-gold-500 hover:bg-gold-400 text-white w-8 h-8 rounded flex items-center justify-center transition-colors shadow-lg"
             aria-label="Scroll to top"
@@ -106,17 +106,17 @@ const Footer = () => {
 
         {/* Bottom Bar Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
-          
+
           {/* Empty div to keep the social icons perfectly centered in the grid */}
           {/* Developed By */}
-<div className="flex items-center justify-center md:justify-start">
-  <p className="text-slate-500 text-xs font-light">
-    Developed by{" : "}
-    <span className="text-gold-500 font-medium">
-      Echo Digital Works
-    </span>
-  </p>
-</div>
+          <div className="flex items-center justify-center md:justify-start">
+            <p className="text-slate-500 text-xs font-light">
+              Developed by{" : "}
+              <span className="text-gold-500 font-medium">
+                Planet Branding
+              </span>
+            </p>
+          </div>
 
           {/* Social Icons (Centered) */}
           <div className="flex justify-center gap-3">
@@ -150,10 +150,10 @@ const Footer = () => {
           <div className="text-center md:text-right">
             <p className="text-slate-500 text-xs font-light">
               {new Date().getFullYear()} <span className="text-gold-500 font-medium">© DR. MAJO'S
-Ortho & Pain Clinic.</span> All Right reserved
+                Ortho & Pain Clinic.</span> All Right reserved
             </p>
           </div>
-          
+
         </div>
 
       </div>
