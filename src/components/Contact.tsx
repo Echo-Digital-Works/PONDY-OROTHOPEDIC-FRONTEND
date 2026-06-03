@@ -102,9 +102,10 @@ const Contact = () => {
               <form className="flex flex-col gap-6" onSubmit={handleWhatsAppSubmit}>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="flex flex-col gap-2">
-                    <label className="text-xs uppercase tracking-widest text-slate-400 font-montserrat">Full Name</label>
+                    <label htmlFor="name" className="text-xs uppercase tracking-widest text-slate-300 font-montserrat">Full Name</label>
                     <input 
                       type="text" 
+                      id="name"
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
@@ -114,9 +115,10 @@ const Contact = () => {
                     />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <label className="text-xs uppercase tracking-widest text-slate-400 font-montserrat">Phone Number</label>
+                    <label htmlFor="phone" className="text-xs uppercase tracking-widest text-slate-300 font-montserrat">Phone Number</label>
                     <input 
                       type="tel" 
+                      id="phone"
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
@@ -129,29 +131,31 @@ const Contact = () => {
                 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="flex flex-col gap-2">
-                    <label className="text-xs uppercase tracking-widest text-slate-400 font-montserrat">Date</label>
+                    <label htmlFor="date" className="text-xs uppercase tracking-widest text-slate-300 font-montserrat">Date</label>
                     {/* FIXED: Added style={{ colorScheme: 'dark' }} to force native icons to render light on dark background */}
                     <input 
                       type="date" 
+                      id="date"
                       name="date"
                       value={formData.date}
                       onChange={handleChange}
                       required
                       style={{ colorScheme: 'dark' }}
-                      className="bg-navy-950/50 border border-white/10 rounded-md px-4 py-3 text-slate-400 focus:outline-none focus:border-gold-500/50 transition-colors" 
+                      className="bg-navy-950/50 border border-white/10 rounded-md px-4 py-3 text-slate-300 focus:outline-none focus:border-gold-500/50 transition-colors" 
                     />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <label className="text-xs uppercase tracking-widest text-slate-400 font-montserrat">Department</label>
+                    <label htmlFor="department" className="text-xs uppercase tracking-widest text-slate-300 font-montserrat">Department</label>
                     {/* FIXED: Ensure options text inherits dark mode rendering or set explicit background on options if needed, 
                         though native dropdowns usually respect the parent background. appearance-none removed to show native arrow, 
                         or keep it and add a custom SVG arrow via CSS if you prefer full control. */}
                     <select 
+                      id="department"
                       name="department"
                       value={formData.department}
                       onChange={handleChange}
                       style={{ colorScheme: 'dark' }}
-                      className="bg-navy-950/50 border border-white/10 rounded-md px-4 py-3 text-slate-400 focus:outline-none focus:border-gold-500/50 transition-colors"
+                      className="bg-navy-950/50 border border-white/10 rounded-md px-4 py-3 text-slate-300 focus:outline-none focus:border-gold-500/50 transition-colors"
                     >
                       <option value="Fractures">Fractures</option>
 <option value="Back Pain / Spondylosis">Back Pain / Spondylosis</option>
@@ -168,8 +172,9 @@ const Contact = () => {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="text-xs uppercase tracking-widest text-slate-400 font-montserrat">Message</label>
+                  <label htmlFor="message" className="text-xs uppercase tracking-widest text-slate-300 font-montserrat">Message</label>
                   <textarea 
+                    id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
