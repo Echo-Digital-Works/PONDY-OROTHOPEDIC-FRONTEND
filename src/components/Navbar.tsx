@@ -31,7 +31,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          <button className="md:hidden text-gold-400" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          <button aria-label="Toggle navigation menu" className="md:hidden text-gold-400" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X /> : <Menu />}
           </button>
         </div>
