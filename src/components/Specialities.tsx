@@ -233,6 +233,7 @@ const Specialities = () => {
                 
                 <button 
                   onClick={() => navigate(-1)}
+                  aria-label="Previous speciality"
                   className="absolute left-0 z-20 w-10 h-10 -ml-2 rounded-full bg-navy-900/80 border border-gold-500/20 text-gold-400 flex items-center justify-center backdrop-blur-sm hover:bg-gold-500/10 transition-colors"
                 >
                   <ChevronLeft className="w-6 h-6" />
@@ -257,6 +258,7 @@ const Specialities = () => {
 
                 <button 
                   onClick={() => navigate(1)}
+                  aria-label="Next speciality"
                   className="absolute right-0 z-20 w-10 h-10 -mr-2 rounded-full bg-navy-900/80 border border-gold-500/20 text-gold-400 flex items-center justify-center backdrop-blur-sm hover:bg-gold-500/10 transition-colors"
                 >
                   <ChevronRight className="w-6 h-6" />
@@ -314,6 +316,7 @@ const Specialities = () => {
               
               <button
                 onClick={() => setSelectedSpec(null)}
+                aria-label="Close details"
                 className="absolute top-4 right-4 w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-slate-400 hover:text-gold-400 hover:border-gold-400 transition-all"
               >
                 <X className="w-4 h-4" />
