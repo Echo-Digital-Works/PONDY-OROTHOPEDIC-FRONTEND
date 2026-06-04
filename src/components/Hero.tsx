@@ -73,7 +73,7 @@ const Hero = () => {
             <div className="flex gap-6 items-start">
               <div className="w-24 h-24 rounded-full border-2 border-gold-500/50 p-1 flex-shrink-0 relative">
                 <div className="absolute inset-0 rounded-full border border-gold-400/30 animate-[spin_10s_linear_infinite]"></div>
-                <img src="https://ui-avatars.com/api/?name=Vishal+Manoharan&background=0a192f&color=c9a764&size=128" alt="Dr. Vishal Manoharan" className="w-full h-full rounded-full object-cover" />
+                <img src="https://ui-avatars.com/api/?name=Vishal+Manoharan&background=0a192f&color=c9a764&size=128" width="128" height="128" alt="Dr. Vishal Manoharan" className="w-full h-full rounded-full object-cover" />
               </div>
               
               <div className="flex flex-col gap-2">
