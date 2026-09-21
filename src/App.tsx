@@ -1,20 +1,8 @@
-
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Specialities from './components/Specialities';
-import Treatments from './components/Treatments';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-
 const App = () => {
   return (
-    <div className="bg-navy-950 text-slate-200 min-h-screen overflow-x-hidden selection:bg-gold-500 selection:text-navy-950">
-      <Navbar />
-      <Hero />
-      <Specialities />
-      <Treatments />
-      <Contact />
-      <Footer />
+    <div className="bg-[#030b1c] text-slate-200 min-h-screen flex flex-col items-center justify-center font-['Montserrat']">
+      <h1 className="text-8xl font-bold text-slate-100 mb-4 font-['Cinzel']">404</h1>
+      <p className="text-2xl text-slate-400">Page Not Found</p>
     </div>
   );
 };
